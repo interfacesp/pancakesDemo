@@ -11,6 +11,10 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'pancake-fiche',
+    loadChildren: () => import('./pancake-fiche/pancake-fiche.module').then( m => m.PancakeFichePageModule)
+  },
 ];
 
 @NgModule({
