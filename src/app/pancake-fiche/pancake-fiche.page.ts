@@ -26,4 +26,8 @@ export class PancakeFichePage implements OnInit {
 
   }
 
+  retourHome(){
+      this.router.navigateByUrl("/home");
+  }
+
 }
