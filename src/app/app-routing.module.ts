@@ -15,6 +15,10 @@ const routes: Routes = [
     path: 'pancake-fiche',
     loadChildren: () => import('./pancake-fiche/pancake-fiche.module').then( m => m.PancakeFichePageModule)
   },
+  {
+    path: 'creation',
+    loadChildren: () => import('./creation/creation.module').then( m => m.CreationPageModule)
+  },
 ];
 
 @NgModule({

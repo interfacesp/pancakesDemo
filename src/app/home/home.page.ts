@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import { Pancake, listeCrepes} from '../pancake';
 
 @Component({
@@ -10,8 +11,12 @@ export class HomePage {
 
   mesCrepes: Pancake[]; 
 
-  constructor() {
+  constructor(private router: Router) {
     this.mesCrepes= listeCrepes.slice();
+  }
+
+  createNew(){
+    this.router.navigateByUrl("/creation");
   }
 
 }
