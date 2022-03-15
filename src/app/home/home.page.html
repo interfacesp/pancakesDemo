@@ -13,7 +13,11 @@
       <ion-col size="6" *ngFor="let aCrepe of mesCrepes ">
             <h3>{{aCrepe.name}}</h3>
 
-            <p>{{aCrepe.description}}</p>
+            <!-- <img src={{aCrepe.photo.webViewPath}}> -->
+            <ion-img [src]="aCrepe.photo.webViewPath" ></ion-img>
+           <a  [routerLink] = "['/pancake-fiche/detail' , aCrepe.id]">
+              Aller vers la page détail
+           </a>
 
       </ion-col>
     </ion-row>

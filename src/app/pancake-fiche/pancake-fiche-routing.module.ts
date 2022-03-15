@@ -5,7 +5,7 @@ import { PancakeFichePage } from './pancake-fiche.page';
 
 const routes: Routes = [
   {
-    path: '',
+    path: 'detail/:id',
     component: PancakeFichePage
   }
 ];

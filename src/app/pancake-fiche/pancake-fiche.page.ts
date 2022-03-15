@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { Pancake } from '../pancake';
+import { ActivatedRoute, Router } from '@angular/router';
+import { Pancake, listeCrepes } from '../pancake';
+
 
 @Component({
   selector: 'app-pancake-fiche',
@@ -10,10 +12,17 @@ export class PancakeFichePage implements OnInit {
 
   maCrepe: Pancake; 
 
-  constructor() { }
+  constructor(private router: Router, 
+              private activatedRoute: ActivatedRoute) { }
 
   ngOnInit() {
     
+    // http://localhost:8100/pancake-fiche/detail/1
+
+    const paramMap = this.activatedRoute.snapshot.paramMap;
+    const idPancake = Number(this.activatedRoute.snapshot.paramMap.get("id"));
+
+    this.maCrepe = listeCrepes.find(crepe => crepe.id == idPancake);
 
   }
 

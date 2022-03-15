@@ -1,6 +1,6 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>pancakeFiche</ion-title>
+    <ion-title>Détail d'une crêpe</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -8,15 +8,16 @@
   
   <ion-card>
       <ion-card-header>
-        <h3>Crêpe Sirop d'érable</h3>
-        <img src="https://www.pngall.com/wp-content/uploads/5/Pancake-PNG-Images.png">
+        <h3>{{maCrepe.name}}</h3>
         
-        <ion-card-subtitle>Description</ion-card-subtitle>
+        <ion-img [src]="maCrepe.photo.webViewPath" ></ion-img>
+
+        <ion-card-subtitle>Sous-titre</ion-card-subtitle>
 
       </ion-card-header>
 
       <ion-card-content>
-          C'est une délicieuse crêpe venue du Canada
+          {{maCrepe.description}}
       </ion-card-content>
   </ion-card>
 
