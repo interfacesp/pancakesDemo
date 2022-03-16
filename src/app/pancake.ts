@@ -1,13 +1,19 @@
-export class Pancake {
+export interface Pancake {
     id: number; 
     description: string; 
     name: string ; 
     photo: UserPhoto; 
 }
 
-export class UserPhoto {
+export interface UserPhoto {
     filePath: string; 
     webViewPath: string;
+}
+
+export interface PancakeAddOptions{
+    name: string,
+    descr: string,
+    photo: UserPhoto
 }
 
 
