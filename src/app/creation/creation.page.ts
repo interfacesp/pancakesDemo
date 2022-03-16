@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
+import { Router } from '@angular/router';
 import { UserPhoto } from '../pancake';
 import { PancakeService } from '../services/pancake.service';
 import { PhotoService } from '../services/photo.service';
@@ -15,7 +16,8 @@ export class CreationPage implements OnInit {
   
 
   constructor(private photoService: PhotoService,
-              private pancakeService: PancakeService) { }
+              private pancakeService: PancakeService,
+              private router: Router) { }
 
   ngOnInit() {
   }
@@ -36,7 +38,9 @@ export class CreationPage implements OnInit {
               descr: submittedForm.value.descr,
               photo: this.myPhoto
             }
-        )
+        );
+
+        this.router.navigateByUrl("/home");
 
     }else {
         alert("Le nom et la description sont obligatoires!");

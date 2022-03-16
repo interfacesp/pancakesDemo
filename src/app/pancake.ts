@@ -10,6 +10,11 @@ export interface UserPhoto {
     webViewPath: string;
 }
 
+export interface Location{
+    lati: number;
+    longi: number;
+}
+
 export interface PancakeAddOptions{
     name: string,
     descr: string,
