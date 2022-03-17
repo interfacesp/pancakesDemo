@@ -56,48 +56,6 @@ ionic s
 
 ``` 
 
-## Déploiement 
-
-### Lancer un build
-
-
-```bash
-
-ionic build
-
-``` 
-
-
-### Créer un projet Android
-
-```bash
-
-ionic cap add android
-
-``` 
-
-### Synchroniser projet Ionic et projet Android
-
-```bash
-
-ionic cap copy
-
-``` 
-puis 
-
-```bash
-
-ionic cap sync android 
-
-``` 
-
-### Lancer le projet Android dans Android Studio
-
-```bash
-
-ionic cap open android 
-
-``` 
 
 ## Générer une page 
 
@@ -140,6 +98,51 @@ Todo
 ### Installation 
 
 ### Utilisation
+
+
+
+## Déploiement 
+
+### Lancer un build
+
+
+```bash
+
+ionic build
+
+``` 
+
+
+### Créer un projet Android
+
+```bash
+
+ionic cap add android
+
+``` 
+
+### Synchroniser projet Ionic et projet Android
+
+```bash
+
+ionic cap copy
+
+``` 
+puis 
+
+```bash
+
+ionic cap sync android 
+
+``` 
+
+### Lancer le projet Android dans Android Studio
+
+```bash
+
+ionic cap open android 
+
+``` 
 
 
 ## Documentation Officielle
