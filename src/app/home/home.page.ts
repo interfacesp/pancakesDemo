@@ -19,8 +19,6 @@ export class HomePage implements OnInit {
   ngOnInit() {
     this.mesCrepes= this.pancakeService.newListeCrepes;
     
-    console.log("Taille liste" + this.mesCrepes.length);
-
   }
 
   createNew(){

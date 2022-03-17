@@ -23,15 +23,18 @@
 
       <ion-item>
           <ion-label>Nom: </ion-label>
-          <input type="text" name="leNom" ngModel required #leNom="ngModel">
+          <input type="text" name="leNom" 
+                            required 
+                            ngModel
+                            #leNom="ngModel">
       </ion-item>
 
       <ion-item>
           <ion-label>Description: </ion-label>
           <textarea name="descr"
                     placeholder="description ici..." 
-                    required 
-                    ngModel 
+                    required
+                    ngModel
                     #descr="ngModel"
                     ></textarea>
       </ion-item>

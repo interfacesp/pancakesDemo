@@ -40,6 +40,9 @@ export class CreationPage implements OnInit {
             }
         );
 
+        // submittedForm.resetForm(); 
+        // this.myPhoto= undefined;
+
         this.router.navigateByUrl("/home");
 
     }else {
