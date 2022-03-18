@@ -3,6 +3,7 @@ export interface Pancake {
     description: string; 
     name: string ; 
     photo: UserPhoto; 
+    panLocation?: MyLocation;
 }
 
 export interface UserPhoto {
@@ -10,7 +11,7 @@ export interface UserPhoto {
     webViewPath: string;
 }
 
-export interface Location{
+export interface MyLocation{
     lati: number;
     longi: number;
 }

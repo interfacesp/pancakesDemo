@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { Router } from '@angular/router';
-import { UserPhoto } from '../pancake';
+import { MyLocation, UserPhoto } from '../pancake';
+import { LocationService } from '../services/location.service';
 import { PancakeService } from '../services/pancake.service';
 import { PhotoService } from '../services/photo.service';
 
@@ -13,11 +14,13 @@ import { PhotoService } from '../services/photo.service';
 export class CreationPage implements OnInit {
 
   myPhoto: UserPhoto; 
+  currentLocation: MyLocation;
   
 
   constructor(private photoService: PhotoService,
               private pancakeService: PancakeService,
-              private router: Router) { }
+              private router: Router,
+              private locationService: LocationService) { }
 
   ngOnInit() {
   }
@@ -26,6 +29,10 @@ export class CreationPage implements OnInit {
   async onAddPicture(){
     // alert("photo");
     this.myPhoto= await this.photoService.getNewPhoto();
+  }
+
+  async onAddPosition(){
+    this.currentLocation = await this.locationService.getMyLocation();
   }
 
   onAddPancake(submittedForm: NgForm){

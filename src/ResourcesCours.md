@@ -46,7 +46,6 @@ ionic start nomApplication list --type=angular --capacitor
 ```bash
 
 ionic serve 
-
 ``` 
 ou 
 
