@@ -43,7 +43,8 @@ export class CreationPage implements OnInit {
             {
               name: submittedForm.value.leNom, 
               descr: submittedForm.value.descr,
-              photo: this.myPhoto
+              photo: this.myPhoto, 
+              loc: this.currentLocation
             }
         );
 

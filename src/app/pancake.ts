@@ -19,7 +19,8 @@ export interface MyLocation{
 export interface PancakeAddOptions{
     name: string,
     descr: string,
-    photo: UserPhoto
+    photo: UserPhoto,
+    loc: MyLocation
 }
 
 

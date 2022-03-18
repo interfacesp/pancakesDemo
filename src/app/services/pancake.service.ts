@@ -19,7 +19,8 @@ export class PancakeService {
       id: newId,
       name:newPancake.name,
       description: newPancake.descr,
-      photo: newPancake.photo
+      photo: newPancake.photo,
+      panLocation: newPancake.loc
     }
 
     //ajouter cette pancake dans tableau listeCrepes
