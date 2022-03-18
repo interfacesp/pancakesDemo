@@ -34,6 +34,12 @@
       <ion-item *ngIf="maCrepe.panLocation">
         <ion-label> Longitude: {{maCrepe.panLocation.longi}}</ion-label>
     </ion-item>
+
+    <ion-button *ngIf="maCrepe.panLocation" (click)="showMap()">
+        View on Map
+    </ion-button>
+
+
   </ion-card>
 
 </ion-content>

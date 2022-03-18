@@ -32,4 +32,15 @@ export class PancakeFichePage implements OnInit {
       this.router.navigateByUrl("/home");
   }
 
+  showMap(){
+    const lati = this.maCrepe.panLocation.lati;
+    const longi = this.maCrepe.panLocation.longi;
+    const zoom = 15;
+    const link = 'https://www.google.com/maps/@'+lati+','+longi+','+zoom+'z';
+
+    //ouvre nouvelle fenêtre avec ce lien
+    window.open(link);
+
+  }
+
 }
