@@ -55,6 +55,23 @@ ionic s
 
 ``` 
 
+## Réparation 
+
+Commande pour réparation d'éventuelles erreurs de modules 
+
+```bash
+
+ionic repair
+
+``` 
+## Information environnement développement
+
+```bash
+
+ionic info
+
+``` 
+
 
 ## Générer une page 
 
