@@ -15,7 +15,9 @@
       <ion-card-header>
         <h3>{{maCrepe.name}}</h3>
         
-        <ion-img [src]="maCrepe.photo.webViewPath" ></ion-img>
+        <ion-img *ngIf="maCrepe.photo"
+              [src]="maCrepe.photo.webViewPath" >
+          </ion-img>
 
         <ion-card-subtitle>Sous-titre</ion-card-subtitle>
 

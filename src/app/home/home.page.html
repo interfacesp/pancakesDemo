@@ -14,7 +14,9 @@
             <h3>{{aCrepe.name}}</h3>
 
             <!-- <img src={{aCrepe.photo.webViewPath}}> -->
-            <ion-img [src]="aCrepe.photo.webViewPath" ></ion-img>
+            <ion-img *ngIf="aCrepe.photo" 
+                      [src]="aCrepe.photo.webViewPath" ></ion-img>
+
            <a  [routerLink] = "['/pancake-fiche/detail' , aCrepe.id]">
               Aller vers la page détail
            </a>
