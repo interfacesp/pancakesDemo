@@ -6,9 +6,9 @@
 
 <ion-content>
    
-  <div class="upload" *ngIf="myPhoto">
+  <div  *ngIf="myPhoto">
         <p> Imgage reçue: </p>
-        <ion-img [src]="myPhoto.webViewPath"></ion-img>
+        <ion-img class="upload" [src]="myPhoto.webViewPath"></ion-img>
   </div>
 
   <form #crepeForm="ngForm" (ngSubmit)="onAddPancake(crepeForm)" novalidate>
