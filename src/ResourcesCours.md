@@ -103,10 +103,43 @@ ionic generate services services/nom-du-service
 npm install @capacitor/camera
 
 ```
-* Installer Module PWA-elements  
-Todo
+* L'API de la camera utilise un module PWA(Progressive Web App), qui permet de prendre des images avec une interface Web, dans le cas où application ne tourne pas sur un appareil mobile.
+
+```bash
+
+npm install @ionic/pwa-elements
+
+```
+Après installation, il est nécessaire de modifier le fichier *main.ts* comme dans l'image ci-dessous.
+
+<img src="./assets/docs/pwa-import.PNG" alt="Image utilisation defineCustomElements" title="Utilisation Module pwa-elements">
+
+Plus d'infos: https://capacitorjs.com/docs/web/pwa-elements 
+
 
 ### Utilisation
+
+
+```typescript
+
+    import {Camera, CameraResultType, CameraSource} from '@capacitor/camera'
+
+    ...
+
+    public async getNewPhoto(){
+
+      const photoPrise = await Camera.getPhoto({
+          source: CameraSource.Camera, //source de prise d'image
+          resultType: CameraResultType.Uri, //identifiant de l'image prise
+          quality: 100 // qualité max
+      });
+
+      ...
+
+  }
+
+
+```
 
 
 ## Geolocation API
@@ -114,7 +147,6 @@ Todo
 ### Installation 
 
 ### Utilisation
-
 
 
 ## Déploiement 
