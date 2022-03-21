@@ -141,12 +141,31 @@ Plus d'infos: https://capacitorjs.com/docs/web/pwa-elements
 
 ```
 
-
 ## Geolocation API
 
 ### Installation 
 
+```bash
+
+npm install @capacitor/geolocation
+
+```
+
 ### Utilisation
+
+```typescript
+
+import { Geolocation } from '@capacitor/geolocation';
+
+...
+
+async getMyLocation(){
+      const myPosition =await Geolocation.getCurrentPosition();
+      console.log("Latitude: "+ myPosition.coords.latitude); 
+      console.log("Longitude: "+ myPosition.coords.longitude);
+  }
+
+```
 
 
 ## Déploiement 
