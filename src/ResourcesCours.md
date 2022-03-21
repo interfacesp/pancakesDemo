@@ -112,7 +112,7 @@ npm install @ionic/pwa-elements
 ```
 Après installation, il est nécessaire de modifier le fichier *main.ts* comme dans l'image ci-dessous.
 
-<img src="./assets/docs/pwa-import.PNG" alt="Image utilisation defineCustomElements" title="Utilisation Module pwa-elements">
+<img src="./assets/docs/pwa-import.PNG" alt="Image utilisation defineCustomElements" title="Utilisation Module pwa-elements" width="300px">
 
 Plus d'infos: https://capacitorjs.com/docs/web/pwa-elements 
 
