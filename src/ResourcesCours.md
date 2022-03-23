@@ -1,5 +1,36 @@
 # Initiation aux applications mobiles 
 
+## Introduction 
+
+Le but de ce cours est de présenter une des approches de développement d'applications mobiles.
+
+
+On distingue deux principaux systèmes d'exploitation mobiles:
+
+* iOS (utilisé par les appareils de la famille Apple - iPhone, iPad, etc. )
+* Android
+
+
+Si vous n'avez d'appareil de la famille Apple, il est probable que vous utilisiez un appareil de type Android. 
+
+
+## Technologies et Environnement de développement
+
+
+* Framework global: Ionic
+* Framework Frontend: Angular
+* Langages de programmation : HTML5, CSS, Typescript
+
+
+### Outils de développement 
+
+* Editeur de code (VS code par exemple)
+* Terminal (Exemple: CMD Windows ou Powershell)
+* NodeJS
+* Android Studio (qui comprend un éditeur de code et un Software Development Kit)
+
+
+
 ## Installer Ionic framework CLI (command line interface)  et ses dépendances
 
 ```bash
@@ -12,6 +43,19 @@ npm install -g @ionic/cli native-run cordova-res
 * @ionic/cli : Ligne de commande Ionic Framework
 * native-run: module permettant lancement applications natives (exemple .apk pour Android)
 * cordova-res: module avec icônes d'applications selon plateforme cible (iOS ou Android)
+
+
+## Diagramme d'un cycle de développement d'une application mobile (Plateforme mobile cible: Android). 
+
+
+### Création nouveau projet 
+
+<img src="./assets/docs/NouveauProjetIonic.PNG" alt="Illustration flux de développement" title="Flux de développement" width="400px">
+
+
+### Mise à jour d'un projet existant
+
+<img src="./assets/docs/UpdateProjetIonic.PNG" alt="Illustration mise à jour code" title="Illustration mise à jour de code avec Ionic" width="400px">
 
 
 ## Création d'un nouveau projet
@@ -91,7 +135,7 @@ ionic generate services services/nom-du-service
 
 ```
 
-## Camera API 
+## Camera API
 
 
 ### Installation 
@@ -112,7 +156,7 @@ npm install @ionic/pwa-elements
 ```
 Après installation, il est nécessaire de modifier le fichier *main.ts* comme dans l'image ci-dessous.
 
-<img src="./assets/docs/pwa-import.PNG" alt="Image utilisation defineCustomElements" title="Utilisation Module pwa-elements" width="300px">
+<img src="./assets/docs/pwa-import.PNG" alt="Image utilisation defineCustomElements" title="Utilisation Module pwa-elements" width="400px">
 
 Plus d'infos: https://capacitorjs.com/docs/web/pwa-elements 
 
@@ -141,7 +185,7 @@ Plus d'infos: https://capacitorjs.com/docs/web/pwa-elements
 
 ```
 
-## Geolocation API
+## Geolation API
 
 ### Installation 
 
@@ -169,6 +213,9 @@ async getMyLocation(){
 
 
 ## Déploiement 
+
+
+
 
 ### Lancer un build
 
@@ -212,9 +259,12 @@ ionic cap open android
 ``` 
 
 
-## Documentation Officielle
+## Pour aller plus loin
 
-* Todo 
+* [Ionic Framework Documentation](https://developer.android.com/)
+* [Android Development](https://developer.android.com/)
+* [Déploiement sur Google Play Store](https://ionicframework.com/docs/deployment/play-store)
+  
 
 
   
