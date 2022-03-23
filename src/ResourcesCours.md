@@ -50,12 +50,12 @@ npm install -g @ionic/cli native-run cordova-res
 
 ### Création nouveau projet 
 
-<img src="./assets/docs/NouveauProjetIonic.PNG" alt="Illustration flux de développement" title="Flux de développement" width="400px">
+<img src="./assets/docs/NouveauProjetIonic.png" alt="Illustration flux de développement" title="Flux de développement" width="400px">
 
 
 ### Mise à jour d'un projet existant
 
-<img src="./assets/docs/UpdateProjetIonic.PNG" alt="Illustration mise à jour code" title="Illustration mise à jour de code avec Ionic" width="400px">
+<img src="./assets/docs/UpdateProjetIonic.png" alt="Illustration mise à jour code" title="Illustration mise à jour de code avec Ionic" width="400px">
 
 
 ## Création d'un nouveau projet
