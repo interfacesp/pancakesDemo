@@ -45,7 +45,7 @@ npm install -g @ionic/cli native-run cordova-res
 * cordova-res: module avec icônes d'applications selon plateforme cible (iOS ou Android)
 
 
-## Diagramme d'un cycle de développement d'une application mobile (Plateforme mobile cible: Android). 
+## Diagramme d'un cycle de développement
 
 
 ### Création nouveau projet 
@@ -185,7 +185,7 @@ Plus d'infos: https://capacitorjs.com/docs/web/pwa-elements
 
 ```
 
-## Geolation API
+## Geolocation API
 
 ### Installation 
 
@@ -211,6 +211,25 @@ async getMyLocation(){
 
 ```
 
+## Filesystem API
+
+### Installation 
+
+```bash
+
+npm install @capacitor/filesystem
+
+```
+
+## Storage API
+
+### Installation 
+
+```bash
+
+npm install @capacitor/storage
+
+```
 
 ## Déploiement 
 
