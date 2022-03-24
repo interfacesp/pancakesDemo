@@ -280,7 +280,7 @@ ionic cap open android
 
 ## Pour aller plus loin
 
-* [Ionic Framework Documentation](https://developer.android.com/)
+* [Ionic Framework Documentation](https://ionicframework.com/)
 * [Android Development](https://developer.android.com/)
 * [Déploiement sur Google Play Store](https://ionicframework.com/docs/deployment/play-store)
   
