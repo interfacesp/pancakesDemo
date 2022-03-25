@@ -277,12 +277,22 @@ ionic cap open android
 
 ``` 
 
+***
 
 ## Pour aller plus loin
 
-* [Ionic Framework Documentation](https://ionicframework.com/docs)
-* [Android Development](https://developer.android.com/)
-* [Déploiement sur Google Play Store](https://ionicframework.com/docs/deployment/play-store)
+* [Ionic Framework ](https://ionicframework.com/docs)
+  
+* Android
+
+  - [Déploiement sur Google Play Store](https://ionicframework.com/docs/deployment/play-store)
+  - [Environnement développement Android](https://developer.android.com/)
+
+* Application iOS - iPhone
+    - [Déploiement sur iOS](https://ionicframework.com/docs/angular/your-first-app/deploying-mobile)
+
+    - [xCode - Environnement développement Apple](https://developer.apple.com/xcode/)
+  
   
 
 
